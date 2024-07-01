@@ -14,6 +14,7 @@
 		F5B99F432C2CF6EB0042E2A1 /* CalculatorIMCAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B99F422C2CF6EB0042E2A1 /* CalculatorIMCAppTests.swift */; };
 		F5B99F4D2C2CF6EB0042E2A1 /* CalculatorIMCAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B99F4C2C2CF6EB0042E2A1 /* CalculatorIMCAppUITests.swift */; };
 		F5B99F4F2C2CF6EB0042E2A1 /* CalculatorIMCAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B99F4E2C2CF6EB0042E2A1 /* CalculatorIMCAppUITestsLaunchTests.swift */; };
+		F5B99F5C2C2E76DD0042E2A1 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B99F5B2C2E76DD0042E2A1 /* IMCResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F5B99F482C2CF6EB0042E2A1 /* CalculatorIMCAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorIMCAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B99F4C2C2CF6EB0042E2A1 /* CalculatorIMCAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorIMCAppUITests.swift; sourceTree = "<group>"; };
 		F5B99F4E2C2CF6EB0042E2A1 /* CalculatorIMCAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorIMCAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5B99F5B2C2E76DD0042E2A1 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				F5B99F302C2CF6EA0042E2A1 /* CalculatorIMCAppApp.swift */,
 				F5B99F322C2CF6EA0042E2A1 /* ContentView.swift */,
+				F5B99F5B2C2E76DD0042E2A1 /* IMCResult.swift */,
 				F5B99F342C2CF6EB0042E2A1 /* Assets.xcassets */,
 				F5B99F362C2CF6EB0042E2A1 /* CalculatorIMCApp.entitlements */,
 				F5B99F372C2CF6EB0042E2A1 /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5B99F332C2CF6EA0042E2A1 /* ContentView.swift in Sources */,
+				F5B99F5C2C2E76DD0042E2A1 /* IMCResult.swift in Sources */,
 				F5B99F312C2CF6EA0042E2A1 /* CalculatorIMCAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,10 +444,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Shakko.CalculatorIMCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -476,10 +481,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Shakko.CalculatorIMCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
